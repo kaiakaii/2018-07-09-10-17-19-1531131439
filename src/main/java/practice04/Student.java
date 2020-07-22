@@ -16,6 +16,6 @@ public class Student extends Person {
         this.kLass = kClass;
     }
     public String introduce(){
-        return "I am a Student. I am at Class "+this.kLass+".";
+        return super.introduce()+" I am a Student. I am at Class "+this.kLass+".";
     }
 }
