@@ -2,15 +2,13 @@ package practice08;
 
 public class Teacher extends Person{
     private Klass klass;
-    private int id;
     public Teacher(int id,String name, int age, Klass klass) {
-        super(name, age);
-        this.id =id;
+        super(id, name, age);
         this.klass = klass;
     }
 
-    public Teacher(int i, String name, int age) {
-        super(name, age);
+    public Teacher(int id,String name, int age) {
+        super(id, name, age);
     }
 
     public Klass getKlass() {
